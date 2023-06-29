@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Task1</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="calculator">
+        <h1 class="heading">Calculator</h1>
+        <form class="form-container">
+          <div>
+            <input
+              type="text"
+              name="display"
+              class="input-result"
+              id="result"
+              placeholder="0"
+            />
+          </div>
+          <div class="row-container">
+            <button type="button" class="button-type color" onclick="onClear()">
+              AC
+            </button>
+            <button
+              type="button"
+              class="button-type color"
+              onclick="onRemove()"
+            >
+              DE
+            </button>
+            <button
+              type="button"
+              class="button-type color"
+              onclick="onOperator('^')"
+            >
+              ^
+            </button>
+            <button
+              type="button"
+              class="button-type color"
+              onclick="onOperator('/')"
+            >
+              /
+            </button>
+          </div>
+          <div class="row-container">
+            <button type="button" class="button-type" onclick="onNumber(7)">
+              7
+            </button>
+            <button type="button" class="button-type" onclick="onNumber(8)">
+              8
+            </button>
+            <button type="button" class="button-type" onclick="onNumber(9)">
+              9
+            </button>
+            <button
+              type="button"
+              class="button-type color"
+              onclick="onOperator('*')"
+            >
+              *
+            </button>
+          </div>
+          <div class="row-container">
+            <button type="button" class="button-type" onclick="onNumber(4)">
+              4
+            </button>
+            <button type="button" class="button-type" onclick="onNumber(5)">
+              5
+            </button>
+            <button type="button" class="button-type" onclick="onNumber(6)">
+              6
+            </button>
+            <button
+              type="button"
+              class="button-type color"
+              onclick="onOperator('-')"
+            >
+              -
+            </button>
+          </div>
+          <div class="row-container">
+            <button type="button" class="button-type" onclick="onNumber(1)">
+              1
+            </button>
+            <button type="button" class="button-type" onclick="onNumber(2)">
+              2
+            </button>
+            <button type="button" class="button-type" onclick="onNumber(3)">
+              3
+            </button>
+            <button
+              type="button"
+              class="button-type color"
+              onclick="onOperator('+')"
+            >
+              +
+            </button>
+          </div>
+          <div class="row-container">
+            <button type="button" class="button-type" onclick="onNumber(00)">
+              00
+            </button>
+            <button type="button" class="button-type" onclick="onNumber(0)">
+              0
+            </button>
+            <button
+              type="button"
+              class="button-type"
+              onclick="onNumber('.')"
+            >
+              .
+            </button>
+            <button type="button" class="button-equal" onclick="onCalculate()">
+              =
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
